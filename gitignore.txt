@@ -1,0 +1,102 @@
+# ============================================================
+#  .gitignore - AudioCaptureStudio
+# ============================================================
+
+# ---------- Dependencias ----------
+node_modules/
+.yarn/cache/
+.yarn/unplugged/
+.pnp
+.pnp.js
+
+# ---------- Salidas de compilación / empaquetado ----------
+dist/
+build/
+out/
+release/
+extension-dist/
+*.zip
+*.rar
+*.7z
+*.exe
+*.msi
+*.dmg
+*.app
+*.pkg
+*.deb
+*.rpm
+
+# ---------- Datos de ejecución (no se versionan) ----------
+
+recordings/
+exports/
+runtime/
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+
+# ---------- Configuración local / secretos ----------
+.env
+.env.*
+*.env
+!.env.example
+*.local
+config/local.*
+config/*.local.*
+secrets.*
+*.pem
+*.key
+
+# ---------- Logs de errores / basura ----------
+*error*.txt
+*compilac*.txt
+*crash*.txt
+*debug*.log
+
+# ---------- Bases de datos locales ----------
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# ---------- Sistema operativo ----------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.Spotlight-V100
+.Trashes
+._*
+
+# ---------- Editores / IDE ----------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ---------- Caché ----------
+.cache/
+.parcel-cache/
+.vite/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# ---------- Scripts temporales / personales ----------
+listar'dir.bat
+listar-dir.bat
+listar_dir.bat
+
+# ---------- Opcional: descomenta si runtime/ es generado ----------
+# runtime/
