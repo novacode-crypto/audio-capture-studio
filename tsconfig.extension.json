@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "allowImportingTsExtensions": true,
+    "types": ["chrome", "vite/client"]
+  },
+  "include": ["shared", "audio-engine/*.ts", "audio-detector", "background", "offscreen", "popup", "sidepanel", "components", "visualizers", "recording", "export", "storage", "styles", "extension/*.d.ts"]
+}
