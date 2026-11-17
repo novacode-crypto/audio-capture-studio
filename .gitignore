@@ -1,15 +1,15 @@
 # ============================================================
-#  .gitignore - AudioCaptureStudio
+# .gitignore - AudioCaptureStudio
 # ============================================================
 
-# ---------- Dependencias ----------
+# Dependencias
 node_modules/
 .yarn/cache/
 .yarn/unplugged/
 .pnp
 .pnp.js
 
-# ---------- Salidas de compilación / empaquetado ----------
+# Salidas de compilación y empaquetado
 dist/
 build/
 out/
@@ -26,24 +26,23 @@ extension-dist/
 *.deb
 *.rpm
 
-# ---------- Datos de ejecución (no se versionan) ----------
+# Datos de ejecución
 data/
-recording/
 recordings/
-storage/
-export/
 exports/
 logs/
+runtime/
 *.log
 *.tmp
 *.temp
 *.bak
 *.old
 
-# ---------- Configuración local / secretos ----------
+# Configuración local y secretos
 .env
 .env.*
 !.env.example
+*.env
 *.local
 config/local.*
 config/*.local.*
@@ -51,19 +50,19 @@ secrets.*
 *.pem
 *.key
 
-# ---------- Logs de errores / basura ----------
+# Logs de errores y archivos temporales
 *error*.txt
 *compilac*.txt
 *crash*.txt
 *debug*.log
 
-# ---------- Bases de datos locales ----------
+# Bases de datos locales
 *.sqlite
 *.sqlite3
 *.db
 *.db-journal
 
-# ---------- Sistema operativo ----------
+# Sistema operativo
 Thumbs.db
 Thumbs.db:encryptable
 ehthumbs.db
@@ -74,7 +73,7 @@ $RECYCLE.BIN/
 .Trashes
 ._*
 
-# ---------- Editores / IDE ----------
+# Editores e IDE
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
@@ -87,7 +86,7 @@ $RECYCLE.BIN/
 *.njsproj
 *.sln
 
-# ---------- Caché ----------
+# Caché
 .cache/
 .parcel-cache/
 .vite/
@@ -95,10 +94,7 @@ $RECYCLE.BIN/
 .stylelintcache
 *.tsbuildinfo
 
-# ---------- Scripts temporales / personales ----------
+# Scripts temporales personales
 listar'dir.bat
 listar-dir.bat
 listar_dir.bat
-
-# ---------- Opcional: descomenta si runtime/ es generado ----------
-# runtime/
